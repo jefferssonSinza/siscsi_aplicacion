@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="siscsi">
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>siscsi</title>
+<link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+<link href="./css/sweetalert.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<li><a ui-sref="usuario">Añadir integrante</a></li>
+<div ui-view>
+
+</div>
+
+</body>
+
+<script src='./js/jquery.min.js' type="text/javascript"></script>
+<script src='./js/bootstrap.min.js' type="text/javascript"></script>
+<script src='./js/angular.js' type="text/javascript"></script>
+<script src='./js/angular-ui-router.js' type="text/javascript"></script>
+<script src='./js/sweetalert.min.js' type="text/javascript"></script>
+<script src='./js/ui-bootstrap.js' type="text/javascript"></script>
+
+<!-- AQUI VIENE ANGULAR FLOW -->
+
+<script src='./app.js' type="text/javascript"></script>
+<script src='views/usuario/usuario_controller.js' type="text/javascript"></script>
+<script src='views/usuario/usuario_service.js' type="text/javascript"></script>
+
+</html>
