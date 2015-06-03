@@ -24,7 +24,7 @@ siscsi.controller('usuarioController',function($scope,usuarioService){
 
     function allUsuario(){
         usuarioService.allUsuario().then(function(resul){
-            console.log(resul.data);
+           $scope.usuarios= resul.data.usuarios;
         })
     }
 });

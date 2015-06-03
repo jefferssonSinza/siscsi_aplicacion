@@ -19,6 +19,6 @@ siscsi.config(['$stateProvider', '$urlRouterProvider',
                  controller: 'usuarioController',
             })
     }]).run(function($rootScope) {
-    $rootScope.urlBase=" http://localhost";
+    $rootScope.urlBase="http://localhost/siscsi/";
 
     });

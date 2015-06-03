@@ -5,13 +5,13 @@ siscsi.service('usuarioService',function($http,$rootScope){
     this.getUsuario= function(id){
         return $http({
             method: 'GET',
-            url: $rootScope.urlBase+'/usuario/'+id
+            url: $rootScope.urlBase+'api/public/usuario'+id
         });
     };
     this.addUsuario= function(usuario){
         return $http({
             method: 'POST',
-            url: $rootScope.urlBase+'/usuario/',
+            url: $rootScope.urlBase+'api/public/usuario',
             data:usuario
         });
     };
@@ -19,21 +19,21 @@ siscsi.service('usuarioService',function($http,$rootScope){
     this.editUsuario= function(usuario,id){
         return $http({
             method: 'PUT',
-            url: $rootScope.urlBase+'/usuario/'+id,
+            url: $rootScope.urlBase+'api/public/usuario'+id,
             data:usuario
         });
     };
     this.removeUsuario=function(id){
         return $http({
             method: 'DELETE',
-            url: $rootScope.urlBase+'/usuario/'+id
+            url: $rootScope.urlBase+'api/public/usuario'+id
         });
     };
 
     this.allUsuario= function(){
         return $http({
-            method: 'DELETE',
-            url: $rootScope.urlBase+'/usuario/'
+            method: 'GET',
+            url: $rootScope.urlBase+'api/public/usuario'
         });
     }
 
